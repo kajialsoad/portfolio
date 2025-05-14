@@ -1,0 +1,15 @@
+/* Fix for image orientation */
+img[src*="IMG_20240414_162053.jpg"] {
+  transform: scaleX(-1); /* Flip horizontally if needed */
+}
+
+/* Fix for social media links */
+a[href*="github.com"] {
+  pointer-events: auto !important;
+}
+
+/* Ensure all external links work properly */
+a[target="_blank"] {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+} 
